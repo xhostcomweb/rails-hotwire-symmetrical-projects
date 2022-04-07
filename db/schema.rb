@@ -86,7 +86,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_06_200633) do
 
   create_table "projects", force: :cascade do |t|
     t.string "content"
-    t.integer "vote"
+    t.integer "vote", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
