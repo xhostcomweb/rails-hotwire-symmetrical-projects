@@ -11,14 +11,14 @@
     </div>
   <% end %>
 
-   <div class="mb-3">>
+   <div class="mb-3">
     <%= form.label :content, style: "display: block" %>
-    <%= form.text_field :content %>
+    <%= form.text_field :content, autofocus: false, class: 'form-control', placeholder: "Content" %>
   </div>
 
    <div class="mb-3">
     <%= form.label :vote, style: "display: block" %>
-    <%= form.number_field :vote %>
+    <%= form.number_field :vote,  autofocus: false, class: 'form-control', placeholder: "Vote" %>
   </div>
 
   <div class="mt-1">
