@@ -3,8 +3,8 @@
 <%= render @project %>
 
 <div>
-  <%= link_to "Edit this project", edit_project_path(@project) %> |
-  <%= link_to "Back to projects", projects_path %>
+  <%= link_to "Edit this project", edit_project_path(@project), class: "btn btn-info btn-sm mt-3" %> |
+  <%= link_to "Back to projects", projects_path, class: "btn btn-dark btn-sm mt-3" %>
 
-  <%= button_to "Destroy this project", @project, method: :delete %>
+  <%= button_to "Destroy this project", @project, method: :delete, class: "btn btn-danger mt-3" %>
 </div>
